@@ -1,0 +1,22 @@
+
+<resources>
+    <string name="app_name">Calculador de resistencias</string>
+    <string-array name="Colores1">
+        <item>Negro</item>
+        <item>Cafe</item>
+        <item>Rojo</item>
+        <item>Naranja</item>
+        <item>Amarillo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+        <item>Violeta</item>
+        <item>Gris</item>
+        <item>Blanco</item>
+    </string-array>
+    <string-array name="Colores2">
+        <item>Marron</item>
+        <item>Rojo</item>
+        <item>Dorado</item>
+        <item>Plata</item>
+    </string-array>
+</resources>
