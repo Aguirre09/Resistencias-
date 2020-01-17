@@ -1,6 +1,16 @@
 
 <resources>
     <string name="app_name">Calculador de resistencias</string>
+
+    <string name="inicio">Calculadora para Resistencias de 4 Bandas</string>
+    <string name="ba1">Banda 1 :</string>
+    <string name="ba2">Banda 2 :</string>
+    <string name="ba3">Banda 3 :</string>
+    <string name="ba4">Banda 4 :</string>
+    <string name="Envio">Enviar</string>
+    <string name="Resulta">Resultado resistencias :</string>
+
+
     <string-array name="Colores1">
         <item>Negro</item>
         <item>Cafe</item>

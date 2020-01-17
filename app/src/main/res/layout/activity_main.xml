@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Calculadora para Resistencias de 4 Bandas"
+                android:text="@string/inicio"
                 android:id="@+id/bienvenida" />
 
 
@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#9e9e9e"
-                android:text="Banda 1:"
+                android:text="@string/ba1"
                 android:textAllCaps="true"
                 android:textColor="#212221" />
 
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#9e9e9e"
-                android:text="Banda 2:"
+                android:text="@string/ba2"
                 android:textAllCaps="true"
                 android:textColor="#212221" />
 
@@ -76,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#9e9e9e"
-                android:text="Banda 3:"
+                android:text="@string/ba3"
                 android:textAllCaps="true"
                 android:textColor="#212221" />
 
@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#9e9e9e"
-                android:text="Banda 4 :"
+                android:text="@string/ba4"
                 android:textAllCaps="true"
                 android:textColor="#212221" />
 
@@ -106,13 +106,13 @@
                 android:layout_height="wrap_content"
                 android:background="#DCCC39"
                 android:elevation="0dp"
-                android:text="Enviar" />
+                android:text="@string/Envio" />
 
             <TextView
                 android:id="@+id/Resultad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Resultado resistencias:"
+                android:hint="@string/Resulta"
                 android:textAllCaps="false" />
         </LinearLayout>
     </LinearLayout>
