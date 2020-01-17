@@ -1,20 +1,14 @@
 package com.example.resistor
 
-import android.content.DialogInterface
-import android.os.Build
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
-import android.widget.Toast
-
-import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_main.*
-
 import java.lang.Math.pow
-
 class MainActivity : AppCompatActivity() {
 
 
@@ -40,9 +34,6 @@ class MainActivity : AppCompatActivity() {
         cal = findViewById<View>(R.id.BtnCalculateIt) as Button
 
 
-
-        // adaptar
-
         // Adaptar  Spinner
         val adapter1 = ArrayAdapter.createFromResource(this, R.array.Colores1,android.R.layout.simple_spinner_item)
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -57,17 +48,18 @@ class MainActivity : AppCompatActivity() {
 
         // Al momento de hacer click en CALCULAR
 
-        cal.setOnClickListener {
 
+        // mostrara  el resultado de la operacion
+        cal.setOnClickListener {
             Resultad.text = Numero_Res(SpnC1.selectedItemPosition, SpnC2.selectedItemPosition,SpnC3.selectedItemPosition) + "" + "y Tiene valor de : " + Tolerancia(SpnC4.selectedItemPosition)
 
 
         }
 
-
-
     }
 
+
+    // Cada Spinner, genera una posicion en formato int, por lo que se procedió a trabajar con estos valores para el calculo
 
     // Se procede a crear funcion para obtener la tolerancia
 
@@ -94,7 +86,9 @@ class MainActivity : AppCompatActivity() {
     //Obtengo el valor de la posicion segun el color
     //
     // Debido a que la posicion de los Spinner esta en Int : 0,1,2,3...
-   // Igual que la resistencia
+   // Para las resistencias de 4 bandas :
+    // La 1ra y 2da banda definen el valor de la resistencia, la tercera banda defina el multiplicador
+    // multiplicador de 10 elevado al valor de la tercera banda
 
     private fun Numero_Res(Value1: Int, Value2: Int, Value3: Int): String {
         val obtener: String
