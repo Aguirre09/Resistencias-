@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         // mostrara  el resultado de la operacion
         cal.setOnClickListener {
-            Resultad.text = Numero_Res(SpnC1.selectedItemPosition, SpnC2.selectedItemPosition,SpnC3.selectedItemPosition) + "" + "y Tiene valor de : " + Tolerancia(SpnC4.selectedItemPosition)
+            Resultad.text = Numero_Res(SpnC1.selectedItemPosition, SpnC2.selectedItemPosition,SpnC3.selectedItemPosition) + "" + " y Tiene valor de : " + Tolerancia(SpnC4.selectedItemPosition)
 
 
         }
