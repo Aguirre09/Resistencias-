@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    //Funcion para generar el valor de la resistencia
+    //Funcion para generar el valor de la resistencia en pantalla
     //Obtengo el valor de la posicion segun el color
     //
     // Debido a que la posicion de los Spinner esta en Int : 0,1,2,3...
